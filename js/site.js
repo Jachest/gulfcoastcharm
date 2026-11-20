@@ -5,7 +5,11 @@
 const GC = {
   // OwnerRez → Settings → Widgets. Create a "Booking/Inquiry" widget for the property,
   // then paste the property ID (orp…) and widget ID (orw…) here.
-  ownerrez: { propertyId: "", widgetId: "" },
+  ownerrez: {
+    propertyId: "168bb5192e3b4ab4a17d3141af0b7eee",
+    widgetId: "e9510e2972d44301bae6e387376981f2",
+    widgetType: "Website booking - Booking/Inquiry"
+  },
 
   // Formspree form IDs (https://formspree.io/forms). Used until OwnerRez handles inquiries.
   formspree: { stay: "", court: "", gather: "" },
@@ -91,12 +95,12 @@ const GC = {
   /* OwnerRez booking widget, with the inquiry form as the fallback until it is configured */
   var orMount = $("#ownerrez");
   if (orMount) {
-    var pid = GC.ownerrez.propertyId, wid = GC.ownerrez.widgetId;
+    var pid = GC.ownerrez.propertyId, wid = GC.ownerrez.widgetId, wtype = GC.ownerrez.widgetType || "Booking/Inquiry";
     if (pid && wid) {
       var w = document.createElement("div");
       w.className = "ownerrez-widget";
       w.setAttribute("data-propertyId", pid);
-      w.setAttribute("data-widget-type", "Booking/Inquiry");
+      w.setAttribute("data-widget-type", wtype);
       w.setAttribute("data-widgetId", wid);
       orMount.appendChild(w);
       var s = document.createElement("script");

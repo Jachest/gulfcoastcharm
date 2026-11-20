@@ -16,7 +16,7 @@ const GC = {
   formspree: { stay: "", court: "", gather: "" },
 
   // Starting nightly rate shown on the booking panel. Leave null to hide the number.
-  nightlyFrom: null,
+  nightlyFrom: 263,
 
   // Platform listings, only if you keep them as a secondary channel. Leave "" to hide.
   airbnb: "",

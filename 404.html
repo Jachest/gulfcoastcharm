@@ -4,10 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page not found — Gulfcoast Charm</title>
-<link rel="stylesheet" href="css/style.css">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
 <script>
-  // Old Shopify links (gulfcoastcharm.com/products/..., /collections/..., /cart, etc.)
-  // land here after the store moves to shop.gulfcoastcharm.com — forward them.
+  // Old Shopify links (/products/..., /collections/..., /cart, etc.) land here after the
+  // store moved to shop.gulfcoastcharm.com. Forward them.
   (function () {
     var p = window.location.pathname;
     if (/^\/(products|collections|cart|pages|blogs|checkout|account)(\/|$)/.test(p)) {
@@ -18,31 +23,36 @@
 </head>
 <body>
 
-<header>
-  <a class="logo" href="index.html">GULFCOAST <span>CHARM</span></a>
-  <nav class="sans">
-    <a href="stay.html">Stay</a>
-    <a href="play.html">Play</a>
+<header class="site-header always-solid">
+  <a class="brand" href="/">Gulfcoast <span>Charm</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="/stay.html">The House</a>
+    <a href="/play.html">The Court</a>
+    <a href="/celebrations.html">Gather</a>
     <a href="https://shop.gulfcoastcharm.com">Shop</a>
-    <a href="celebrations.html">Celebrations</a>
+    <a class="btn btn-brass" href="/stay.html#book">Book Direct</a>
   </nav>
 </header>
 
-<section class="band">
-  <div class="kicker sans">404</div>
-  <h2>That page drifted out with the tide</h2>
-  <p class="lead">Looking for merch? The shop now lives at
-  <a href="https://shop.gulfcoastcharm.com" style="color:var(--terracotta)">shop.gulfcoastcharm.com</a>.
-  Otherwise, head back to shore below.</p>
-  <div class="buttons sans" style="margin-top:28px">
-    <a class="btn btn-solid" href="index.html">Back to Home</a>
-    <a class="btn btn-dark" href="stay.html">Book the House</a>
+<section style="padding-top:160px;min-height:80vh;display:flex;align-items:center">
+  <div class="wrap center">
+    <span class="kicker">404</span>
+    <h1 style="margin:20px auto 0;max-width:16ch">That page drifted out with the tide.</h1>
+    <p class="lead" style="margin:24px auto 0">Looking for merch? The shop now lives at <a href="https://shop.gulfcoastcharm.com" style="color:var(--brass)">shop.gulfcoastcharm.com</a>. Otherwise, head back to shore.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-brass" href="/">Back to home</a>
+      <a class="btn btn-line" href="/stay.html#book">Book the house</a>
+    </div>
   </div>
 </section>
 
-<footer class="sans">
-  <span class="logo">GULFCOAST <span style="color:var(--brass)">CHARM</span></span>
-  <div>Your day, beautifully kept · St. Petersburg, FL</div>
+<footer>
+  <div class="wrap">
+    <div class="bottom" style="padding-top:0;border:0">
+      <span>© 2026 Gulfcoast Charm. All rights reserved.</span>
+      <span>St. Petersburg, Florida</span>
+    </div>
+  </div>
 </footer>
 
 </body>

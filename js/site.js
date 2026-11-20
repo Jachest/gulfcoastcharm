@@ -18,7 +18,7 @@ const GC = {
   vrbo: "",
 
   // Google Maps embed URL (Share → Embed a map → copy the src). Leave "" to hide the map.
-  mapEmbed: "",
+  mapEmbed: "https://www.google.com/maps?q=South+Pasadena,+FL+33707&z=13&output=embed",
 
   // Shop
   shop: "https://shop.gulfcoastcharm.com"

@@ -89,7 +89,7 @@ In order of effort to payoff:
 
 - Formspree IDs, or OwnerRez widget IDs, in `js/site.js`
 - Starting nightly rate in `js/site.js`
-- Google Maps embed URL in `js/site.js` if you want the map on the Stay page
 - DBPR and county license numbers in the footer, if you want them displayed
-- Confirmed drive times for the Location list on the Stay page (St. Pete Beach is from your copy; the others are estimates)
+- A read-through of `guide.html` and `docs/guest-guidebook.pdf`: strike any restaurant you would not send a friend to, add the two or three you would
+- The blanks in `docs/guest-guidebook.html` (Wi-Fi, trash day, quiet hours, shutoffs, your return-guest code), then re-export the PDF
 - Professional photos when available: the layout takes landscape images for heroes and 4:5 portraits for the split sections

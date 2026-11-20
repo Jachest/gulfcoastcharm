@@ -13,7 +13,8 @@ Static site for Gulfcoast Charm, a direct-booking vacation rental in St. Petersb
 | `404.html` | Not-found page; forwards old Shopify paths to the shop subdomain |
 | `css/style.css` | Design system and all styles |
 | `js/site.js` | Configuration block plus header, mobile nav, lightbox, reveal, booking widget logic |
-| `images/` | Property photos (`*.jpg`, `*.jpeg`) and three atmosphere images (`mood-*.jpg`) |
+| `images/` | Property photos, color-corrected for the web |
+| `source-photos/` | The untouched originals, kept for reference and re-processing |
 | `docs/launch-playbook.md` | Direct-booking strategy, setup order, guest experience, marketing plan |
 | `CNAME` | Custom domain for GitHub Pages |
 
@@ -30,7 +31,7 @@ Everything that changes as services go live sits in one block at the top of `js/
 
 ## Images
 
-Atmosphere images (`images/mood-*.jpg`) are AI-generated concept imagery used only for full-bleed mood bands and the Gather hero. They do not depict the property. Every photo of the house and court is a real photo.
+Every image on the site is a real photo of the property or its surroundings. `images/` holds web-ready versions with a gentle white-balance, tonal and sharpening pass applied by `tools/enhance.py`; `source-photos/` holds the originals. To re-run the pass after adding photos: `python3 tools/enhance.py source-photos images`.
 
 Replacing photos: heroes and mood bands want landscape images at least 1600px wide. The split-section images are shown at 4:5 portrait on desktop and 4:3 on mobile. The gallery mosaic accepts any orientation.
 

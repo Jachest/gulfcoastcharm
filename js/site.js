@@ -8,7 +8,8 @@ const GC = {
   ownerrez: {
     propertyId: "168bb5192e3b4ab4a17d3141af0b7eee",
     widgetId: "e9510e2972d44301bae6e387376981f2",
-    widgetType: "Website booking - Booking/Inquiry"
+    widgetType: "Website booking - Booking/Inquiry",
+    hostedUrl: "https://app.ownerrez.com/widgets/e9510e2972d44301bae6e387376981f2?view=form&propertyKey=168bb5192e3b4ab4a17d3141af0b7eee"
   },
 
   // Formspree form IDs (https://formspree.io/forms). Used until OwnerRez handles inquiries.
@@ -112,6 +113,9 @@ const GC = {
       $$("[data-when-engine]").forEach(function (el) { el.hidden = true; });
     }
   }
+
+  /* Hosted booking page links */
+  $$("[data-hosted-booking]").forEach(function (a) { if (GC.ownerrez.hostedUrl) a.href = GC.ownerrez.hostedUrl; else a.hidden = true; });
 
   /* Formspree IDs */
   $$("form[data-form]").forEach(function (f) {

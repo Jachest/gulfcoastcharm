@@ -13,7 +13,7 @@ const GC = {
   },
 
   // Formspree form IDs (https://formspree.io/forms). Used until OwnerRez handles inquiries.
-  formspree: { stay: "", court: "", gather: "" },
+  formspree: { stay: "", court: "xbgoaodg", gather: "xjywewgr" },
 
   // Starting nightly rate shown on the booking panel. Leave null to hide the number.
   nightlyFrom: 263,
